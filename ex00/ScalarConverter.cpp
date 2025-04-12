@@ -6,7 +6,7 @@
 /*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 04:36:19 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/12 20:28:23 by auplisas         ###   ########.fr       */
+/*   Updated: 2025/04/12 20:59:55 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 // 	}
 // }
 
-void ScalarConverter::_convertToChar(double value)
+void _convertToChar(double value)
 {
     std::cout << "char: ";
 		if (std::isnan(value) || value < 0 || value > 127)

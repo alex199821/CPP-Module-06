@@ -6,7 +6,7 @@
 /*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 04:25:46 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/12 20:27:57 by auplisas         ###   ########.fr       */
+/*   Updated: 2025/04/12 20:57:47 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@
 class ScalarConverter
 {
   private:
-	void _convertToChar(double value);
-	void _convertToInt(double value);
-	void _convertToFloat(double value);
-	void _convertToDouble(double value);
+	static void _convertToChar(double value);
+	static void _convertToInt(double value);
+	static void _convertToFloat(double value);
+	static void _convertToDouble(double value);
   public:
 	// Constructors
 	ScalarConverter() = delete;
