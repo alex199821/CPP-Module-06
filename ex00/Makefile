@@ -1,8 +1,8 @@
-NAME = office
+NAME = converter
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++11 #-fsanitize=address
 
-SRCS =  ScalarConverter.cpp
+SRCS =  main.cpp ScalarConverter.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
