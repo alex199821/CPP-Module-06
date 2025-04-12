@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 14:43:49 by macbook           #+#    #+#             */
-/*   Updated: 2025/04/12 14:56:06 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/12 19:52:53 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int	main(void)
 {
-    ScalarConverter::convert("3.2");
+    ScalarConverter::convert("hello");
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 04:25:46 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/12 14:33:56 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/12 20:27:57 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <cctype>
 #include <cmath>
 #include <cstdlib>
+#include <iomanip>
 #include <iostream>
 #include <limits>
 #include <sstream>
@@ -23,6 +24,10 @@
 class ScalarConverter
 {
   private:
+	void _convertToChar(double value);
+	void _convertToInt(double value);
+	void _convertToFloat(double value);
+	void _convertToDouble(double value);
   public:
 	// Constructors
 	ScalarConverter() = delete;
