@@ -6,7 +6,7 @@
 /*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 04:38:28 by macbook           #+#    #+#             */
-/*   Updated: 2025/04/13 06:36:00 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/13 06:38:03 by macbook          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 void	leaks(void)
 {
-	system("leaks serializer");
+	system("leaks base");
 }
 
 Base	*generate(void)
