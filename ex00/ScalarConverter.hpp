@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 04:25:46 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/13 04:40:14 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/13 17:17:55 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ class ScalarConverter
 	static void convert(const std::string &input);
 };
 
+int	countDecimalPlaces(const std::string &string);
 literal_type	selectType(const std::string &str);
 void			handleInt(const std::string &string);
 void			handleFloat(const std::string &string);

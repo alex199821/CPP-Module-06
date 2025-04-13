@@ -3,14 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 04:36:19 by auplisas          #+#    #+#             */
-/*   Updated: 2025/04/13 03:54:31 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/13 17:17:48 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
+
+int	countDecimalPlaces(const std::string &string)
+{
+	std::size_t dot = string.find('.');
+	if (dot == std::string::npos)
+		return 1;
+	std::size_t end = string.find_first_of("fF", dot);
+	if (end == std::string::npos)
+		end = string.length();
+	return static_cast<int>(end - dot - 1);
+}
 
 bool	checkSpecialCases(const std::string &input)
 {

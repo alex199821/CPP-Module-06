@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   HandleDouble.cpp                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: macbook <macbook@student.42.fr>            +#+  +:+       +#+        */
+/*   By: auplisas <auplisas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/13 03:21:07 by macbook           #+#    #+#             */
-/*   Updated: 2025/04/13 03:31:59 by macbook          ###   ########.fr       */
+/*   Updated: 2025/04/13 17:23:08 by auplisas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
 
-void	doubleToChar(double value)
+void doubleToChar(double value)
 {
 	std::cout << "char: ";
 	if (std::isnan(value) || value < 0 || value > 127)
@@ -23,7 +23,7 @@ void	doubleToChar(double value)
 		std::cout << "'" << static_cast<char>(value) << "'" << std::endl;
 }
 
-void	doubleToInt(double value)
+void doubleToInt(double value)
 {
 	std::cout << "int: ";
 	if (std::isnan(value)
@@ -34,16 +34,18 @@ void	doubleToInt(double value)
 		std::cout << static_cast<int>(value) << std::endl;
 }
 
-void	doubleToFloat(double value)
+void doubleToFloat(double value, int precision)
 {
-	std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(value) << "f" << std::endl;
+	std::cout << "float: " << std::fixed << std::setprecision(precision) << static_cast<float>(value) << "f" << std::endl;
 }
 
-void	handleDouble(const std::string &string)
+void handleDouble(const std::string &string)
 {
 	double value = std::stod(string);
+	int precision = countDecimalPlaces(string);
+	std::cout << "precision is: " << precision << std::endl;
 	doubleToChar(value);
-    doubleToInt(value);
-	doubleToFloat(value);
-    std::cout << "double: " << std::fixed << std::setprecision(1) << value << std::endl;
+	doubleToInt(value);
+	doubleToFloat(value, precision);
+	std::cout << "double: " << std::fixed << std::setprecision(precision) << value << std::endl;
 }
