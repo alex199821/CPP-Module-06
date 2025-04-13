@@ -1,8 +1,8 @@
-NAME = converter
+NAME = serializer
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++11 #-fsanitize=address
 
-SRCS =  main.cpp ScalarConverter.cpp SelectType.cpp HandleInt.cpp HandleFloat.cpp HandleDouble.cpp HandleChar.cpp
+SRCS =  main.cpp Serializer.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
