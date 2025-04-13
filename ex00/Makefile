@@ -1,6 +1,6 @@
 NAME = converter
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++11 #-fsanitize=address
+CFLAGS = -Wall -Werror -Wextra -std=c++11 -fsanitize=address
 
 SRCS =  main.cpp ScalarConverter.cpp SelectType.cpp HandleInt.cpp HandleFloat.cpp HandleDouble.cpp HandleChar.cpp
 OBJS = $(SRCS:.cpp=.o)
